@@ -1,0 +1,55 @@
+.light-cursor {
+  position: fixed;
+  z-index: 777;
+  width: 22px;
+  height: 22px;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+  > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: opacity 0.33s ease;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    &:not(.light-cursor__shine-svg) {
+      filter: invert(100%);
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  svg {
+    * {
+      transition: stroke 0.34s ease, fill 0.34s ease;
+      stroke: $night;
+      fill: $night;
+    }
+  }
+  &__shine-svg {
+    filter: blur(1px);
+    width: 80%;
+    height: 80%;
+    svg {
+      animation: PulseS 1.8s cubic-bezier(0.9, 0.9, 0.9, 0.9) 0s infinite alternate, FlickerBrighter 3s cubic-bezier(0.5, 0.5, 0.5, 0.5) 0s infinite alternate;
+      path {
+        width: 100%;
+        height: auto;
+        fill: $light;
+        stroke: $light;
+      }
+    }
+  }
+}
+* {
+  cursor: none;
+
+}
+.page {
+  // &.cursor-done {
+  //   cursor: url('~/assets/imgs/svg/cursors-01.png'), auto;
+  // }
+}

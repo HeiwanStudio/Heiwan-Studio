@@ -1,0 +1,29 @@
+@keyframes Pulse {
+  0% {
+    filter: blur(25px);
+  }
+  4% {
+    filter: blur(25px);
+  }
+  94% {
+    filter: blur(40px);
+  }
+  100% {
+    filter: blur(40px);
+  }
+}
+
+@keyframes PulseS {
+  0% {
+    filter: blur(2px);
+  }
+  4% {
+    filter: blur(2px);
+  }
+  94% {
+    filter: blur(3px);
+  }
+  100% {
+    filter: blur(3px);
+  }
+}

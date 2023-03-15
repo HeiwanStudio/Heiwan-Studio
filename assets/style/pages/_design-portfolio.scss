@@ -1,0 +1,28 @@
+.designs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 20px;
+  width: 100%;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 21px;
+  .design-box {
+    border: 1px solid $light;
+    border-radius: 3px;
+    .img-wrapper {
+      height: 80%;
+      border-bottom: 2px solid $light;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &__title {
+      padding: 13px;
+      color: $light;
+      font-size: 21px;
+    }
+  }
+}

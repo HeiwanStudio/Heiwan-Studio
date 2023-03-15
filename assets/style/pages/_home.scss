@@ -1,0 +1,14 @@
+.page--home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.loadimages {
+  position: absolute;
+  top: -200%;
+  left: -200%;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}

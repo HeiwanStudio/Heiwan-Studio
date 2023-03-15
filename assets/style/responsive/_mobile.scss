@@ -1,0 +1,40 @@
+@media (max-width: 700px) {
+  .logo {
+    margin-bottom: 45%;
+  }
+  .page-open-container {
+    .page-open {
+      padding: 15px;
+    }
+  }
+  .intro-text {
+    max-width: 90%;
+  }
+  .contact-form {
+    max-width: 100%;
+  }
+  body, html {
+    font-size: 8px;
+    cursor: default;
+  }
+  .text--large {
+    font-size: 2rem;
+  }
+  .light-cursor {
+    display: none !important;
+  }
+  @keyframes Flicker {
+    0% {
+      opacity: 0.8;
+    }
+    4% {
+      opacity: 0.8;
+    }
+    94% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

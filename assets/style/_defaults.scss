@@ -1,0 +1,68 @@
+a {
+  text-decoration: none;
+  outline: none !important;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+p {
+  margin: 0px;
+}
+body, html {
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $main-font;
+  margin: 0px;
+}
+p,a,li,span,input,textarea,label {
+  font-family: $body-font;
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.show {
+  opacity: 1 !important;
+}
+.hide {
+  opacity: 0;
+}
+.no-height {
+  height: 0px;
+}
+button {
+  border: unset;
+  background-color: transparent;
+  outline: none;
+}
+input, textarea {
+  border: unset;
+  &:focus, &:focus-within {
+    outline: none;
+
+  }
+}
+// ::-webkit-scrollbar {
+//   width: 0.5rem;
+// }
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: transparent;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: rgba($color: $accent0, $alpha: 0.75) $accent0;
+//   transition: background 0.34s ease;
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: $accent0;
+// }
