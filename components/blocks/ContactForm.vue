@@ -7,6 +7,8 @@
               <input v-model="email.input" type="text" class="input--primary text--large"
                      name="email"
                      placeholder="Your Email"
+                     autocomplete="new-password"
+
                      @mouseenter="setCursor('write')" @mouseleave="setCursor('default')"
                      @blur="email.focused = false" @focus="email.focused = true">
               <!-- <div v-if="errors[0] && !email.focused" class="error">{{errors[0]}}</div> -->
@@ -64,7 +66,7 @@ export default {
         duration: 2,
         width: "100%",
         opacity: 1,
-        delay: 0.5
+        delay: 3.5
       })
       // tl.to(".contact-form", {
       //   duration: 2,
