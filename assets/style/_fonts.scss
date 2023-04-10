@@ -67,39 +67,9 @@
   }
   // 48px
   &--large {
-    font-size: 3rem !important;
-    line-height: 3.2rem !important;
-
+    font-size: 3rem;
+    line-height: 3.2rem;
   }
-  input, textarea {
-    &:autofill, &:-webkit-autofill, &:autofill:hover, &:-webkit-autofill:hover, &:autofill:focus, &:-webkit-autofill:focus {
-      font-size: 3rem !important;
-      line-height: 3.2rem !important;
-    }
-  }
-
-  input:autofill {
-    border: 3px solid darkorange;
-}
-
-input:-webkit-autofill {
-  font-size: 3rem !important;
-  line-height: 3.2rem !important;
-  &:hover, &:focus {
-    font-size: 3rem !important;
-    line-height: 3.2rem !important;
-  }
-}
-
-input:autofill {
-  font-size: 3rem !important;
-  line-height: 3.2rem !important;
-  &:hover, &:focus {
-    font-size: 3rem !important;
-    line-height: 3.2rem !important;
-  }
-}
-
 
   // 22px
   &--medium {
